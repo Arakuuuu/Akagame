@@ -5,3 +5,5 @@ Here is a cybersecurity pack with these option:
 3. Encrypt/Decrypt File
 4. Run Malware Scan
 5. Exit
+to doawload the requirement:
+pip3 install -r requirements.txt
