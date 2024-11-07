@@ -1,4 +1,5 @@
 import sys
+from lib.malwareScanner import MalwareScanner
 from lib.url_detector import PhishingDetector
 from lib.password_checker import PasswordStrengthChecker
 from lib.file_encryption import FileEncryption
@@ -8,10 +9,11 @@ def main():
     print("\n1. Check URL Safety")
     print("2. Check Password Strength")
     print("3. Encrypt/Decrypt File")
-    print("4. Exit")
+    print("4. Run Malware Scan")
+    print("5. Exit")
     
     while True:
-        choice = input("\nSelect an option (1-4): ")
+        choice = input("\nSelect an option (1-5): ")
         
         if choice == "1":
             url = input("Enter URL to check: ")
@@ -35,11 +37,18 @@ def main():
             if operation.lower() == 'e':
                 crypto.encrypt_file(filename, password)
                 print(f"File encrypted: {filename}.encrypted")
-            else:
+            elif operation.lower() == 'd':
                 crypto.decrypt_file(filename, password)
                 print(f"File decrypted: {filename}.decrypted")
-                
+            else:
+                print("Invalid operation. Please enter 'e' for encrypt or 'd' for decrypt.")
+        
         elif choice == "4":
+            print("Running Malware Scan...")
+            scanner = MalwareScanner('/path/to/scan')
+            scanner.scan_files()
+        
+        elif choice == "5":
             print("Exiting...")
             sys.exit(0)
             
