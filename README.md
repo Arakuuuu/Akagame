@@ -1,51 +1,33 @@
-# Akagame
-Here is a cybersecurity pack with these option:
-1. Check URL Safety
-2. Check Password Strength
-3. Encrypt/Decrypt File
-4. Run Malware Scan
-5. Exit
-to doawload the requirement:
-pip3 install -r requirements.txt
-# Download and Install Akagame
-
-To download this script directly from the terminal, follow the instructions below for your operating system.
-
-## Requirements
-
-- Git (for cloning the repository)
-- A compatible terminal or command prompt
-
-## Installation
-
-### Linux and macOS
-
-1. Open a terminal.
-2. Run the following command:
-
-   ```bash
-   git clone https://github.com/Arakuuuu/Akagame.git
-
-   To add instructions for downloading the script from your GitHub repository into a `README.md` file for Linux, Windows, and macOS, you can include these terminal commands for each platform.
-
-Here’s a template you can add to your `README.md` file:
+Here’s a polished and corrected version for your `README.md` file:
 
 ```markdown
-# Download and Install Akagame
+# Akagame
 
-To download this script directly from the terminal, follow the instructions below for your operating system.
+This is a cybersecurity tool with the following features:
+1. Check URL Safety
+2. Check Password Strength
+3. Encrypt/Decrypt Files
+4. Run Malware Scan
+5. Exit
 
 ## Requirements
 
-- Git (for cloning the repository)
-- A compatible terminal or command prompt
+- `git` (for cloning the repository)
+- Python packages (install using `requirements.txt`)
 
-## Installation
+To install the required Python packages, run:
+```bash
+pip3 install -r requirements.txt
+```
+
+## Download and Installation
+
+To download this script directly from the terminal, follow the instructions below based on your operating system.
 
 ### Linux and macOS
 
 1. Open a terminal.
-2. Run the following command:
+2. Clone the repository:
 
    ```bash
    git clone https://github.com/Arakuuuu/Akagame.git
@@ -57,16 +39,22 @@ To download this script directly from the terminal, follow the instructions belo
    cd Akagame
    ```
 
-4. (Optional) Make the main script executable if needed:
+4. (Optional) Make the main script executable if necessary:
 
    ```bash
    chmod +x main_script.sh
    ```
 
+5. Run the script:
+
+   ```bash
+   ./main_script.sh
+   ```
+
 ### Windows
 
 1. Open PowerShell or Command Prompt.
-2. Run the following command:
+2. Clone the repository:
 
    ```powershell
    git clone https://github.com/Arakuuuu/Akagame.git
@@ -78,13 +66,17 @@ To download this script directly from the terminal, follow the instructions belo
    cd Akagame
    ```
 
-4. (Optional) Run the script (adjust the name if different):
+4. Run the script (adjust the name if different):
 
    ```powershell
    .\main_script.bat
    ```
 
+### Troubleshooting
+
 If `git` isn’t installed, you can download it from [git-scm.com](https://git-scm.com/) and install it.
 
-**Note**: Ensure any dependencies for running `Akagame` are installed. Instructions for these can be added here.
+**Note**: Ensure all dependencies listed in `requirements.txt` are installed to fully utilize Akagame’s functionality.
+``` 
 
+This version is formatted for clarity, provides cross-platform instructions, and includes extra steps where needed. Feel free to adjust any script names or details specific to your project!
